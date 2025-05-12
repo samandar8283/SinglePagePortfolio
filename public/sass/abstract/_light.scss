@@ -1,0 +1,29 @@
+:root {
+    --primary-text: rgb(17, 17, 17);
+    --secondary-text: rgb(23, 27, 41);
+    --blue-text-hover: rgb(13, 110, 253);
+    --primary-text-90: rgba(17, 17, 17, 0.9);
+    --secondary-text-80: rgba(23, 27, 41, 0.8);
+    --navbar-text: rgba(0, 0, 0, 1);
+    --portfolio-card-link-hover: rgb(8, 95, 8);
+
+    --bg-primary: rgb(250, 250, 250);
+    --bg-secondary: rgb(255, 255, 240);
+    --bg-navbar: rgb(255, 255, 255);
+    --bg-dropdown-item: rgb(230, 230, 230);
+    --bg-secondary-90: rgba(23, 23, 23, 0.9);
+    --bg-card-primary: rgb(13, 12, 13);
+    --bg-card-secondary: rgb(23, 23, 23);
+    --bg-footer: rgb(13, 12, 13);
+    --bg-accordion-button: rgb(210, 210, 210);
+
+    --primary-border: rgb(108, 117, 125);
+    --secondary-border: rgb(108, 117, 125);
+
+    --mode-bg-image: url("./../../assets/media/images/generals/mode-light.png");
+    --mode-bg-hover: url("./../../assets/media/images/generals/mode-light-hover.png");
+    --home-bg-image: url('./../../assets/media/images/generals/bg-home-light.jpg');
+    --refresh-bg-image: url("./../../assets/media/images/generals/reset-light.png");
+}
+
+

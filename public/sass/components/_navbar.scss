@@ -1,0 +1,115 @@
+@keyframes rotateAnimation {
+    0% { transform: rotateY(0deg); }
+    25% { transform: rotateY(360deg); }
+    50% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding: 12.5px 0;
+}
+.nav-link, .nav-link-dropdown {
+    font-weight: 500;
+}
+.mode-toggle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.2s ease-in-out;
+}
+.mode-toggle:hover {
+    cursor: pointer;
+}
+#mode-toggle-1 {
+    display: none;
+    vertical-align: middle;
+}
+#mode-toggle-2 {
+    margin-top: 8px;
+    display: list-item;
+}
+.navbar-brand__card {
+    position: relative;
+    display: block;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+    animation:  rotateAnimation 8s ease-in-out infinite;
+}
+.navbar-brand__card {
+    .card-front {
+        backface-visibility: hidden;
+    }
+    .card-back {
+        position: absolute;
+        transform: rotateY(180deg);
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+    }
+} 
+@media only screen and (min-width: 992px) {
+    .dropdown-menu, .dropdown-menu[data-bs-popper] {
+        top: -260%;
+    }
+}
+@media only screen and (max-width: 1199.9px) {
+    .navigation .container {
+        max-width: 1140px;
+    }
+}
+@media only screen and (max-width: 991.9px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 2.5px 0;
+    }
+    .navbar-brand__card, .navbar-brand__card img {
+        width: 55px;
+        height: 55px;
+    }
+    .navbar-toggler-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .navbar-collapse {
+        margin-top: 8px;
+        padding-top: 3px;
+    }
+    .navbar-toggler:active, .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px;
+    }
+    #mode-toggle-1 {
+        display: inline-block;
+    }
+    #mode-toggle-2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 575.9px) {
+    .navigation {
+        padding: 7.5px 0;
+    }
+    .navbar-brand__card, .navbar-brand__card img {
+        width: 45px;
+        height: 45px;
+    }
+    .navbar-toggler-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .navbar-toggler:active, .navbar-toggler:focus {
+        box-shadow: 0 0 0 2px;
+    }
+    .navigation .container {
+        padding: 0 20px;
+    }
+}

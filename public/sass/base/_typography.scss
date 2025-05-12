@@ -1,0 +1,143 @@
+@use "./../abstract/variables" as var;
+html {
+    font-size: 16px;
+    letter-spacing: 0px;
+    body {
+        line-height: 24px !important;
+    }
+}
+html.vt323 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    .nav-item, .switch-style {
+        letter-spacing: 0px;
+    }
+
+}
+html.playfair {
+    font-size: 17px;
+    letter-spacing: 0px;
+}
+html.inter {
+    letter-spacing: 1px;
+    .nav-item, .switch-style {
+        letter-spacing: 0px;
+    }
+}
+html.lobster {
+    letter-spacing: 2px;
+    .switch-style {
+        letter-spacing: 0px;
+    }
+}
+html.raleway {
+    letter-spacing: 1px;
+    .nav-item, .switch-style {
+        letter-spacing: 0px;
+    }
+}
+html.nunito {
+    font-size: 17px;
+}
+html.merriweather {
+    letter-spacing: 1px;
+    .nav-item, .switch-style {
+        letter-spacing: 0px;
+    }
+}
+.primary-text {
+    font-family: var.$primary-font;
+}
+.secondary-text {
+    font-family: var.$secondary-font;
+    font-size: 1rem;
+}
+
+.home__motto {
+    opacity: 0.9;
+}
+.home__name {
+    font-size: clamp(2rem, 5vw, 3.75rem);
+}
+.home__about {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.home__motto {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+.btn {
+    font-size: 0.85rem;
+}
+
+.myName,.section-title {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+.details, .education__period, .work__period {
+    font-size: 1.125rem;
+}
+
+.section-subtitle {
+    font-style: italic;
+    font-size: 1.125rem;
+    letter-spacing: 0.4px;
+}
+.portfolio-card__title, .service-card__title,
+.education__title, .work__title {
+    font-size: 1.5rem;
+}
+.form-control::placeholder {
+    font-size: 1rem;
+}
+.switch-style__title {
+    font-size: 18px;
+}
+.switch-style__subtitle, .switch-style__description {
+    font-size: 16px;
+}
+@media only screen and (max-width: 1399.9px) {
+
+}
+@media only screen and (max-width: 1199.9px) {
+
+}
+@media only screen and (max-width: 991.9px) {
+
+}
+@media only screen and (max-width: 767.9px) {
+
+}
+@media only screen and (max-width: 575.9px) {
+    .primary-text, .secondary-text, .form-control::placeholder, .form-control {
+        font-size: 0.9rem;
+    }
+    .home__name {
+        font-size: clamp(2rem, 5vw, 3.75rem);
+    }
+    .home__about {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+    .home__motto {
+        font-size: clamp(0.8rem, 3vw, 1.25rem);
+    }
+    .myName,.section-title {
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+    }
+    .portfolio-card__title,
+    .service-card__title,
+    .education__title,
+    .work__title {
+        font-size: 1.25rem;
+    }
+    .education-item__title {
+        font-size: 1.125rem;
+    }
+    .education__period, .work__period {
+        font-size: 1rem;
+    }
+    .switch-style__title {
+        font-size: 16px;
+    }
+    .switch-style__subtitle, .switch-style__description {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,200 @@
+.switch-style {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    z-index: 999;
+    width: 240px;
+    background-color: rgb(255, 255, 242);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translate(100%,-50%);
+    transition: transform 0.5s ease-in-out;
+    font-family: "Montserrat";
+}
+.switch-style.active {
+    transform: translate(0, -50%);
+}
+.switch-style__body {
+    padding: 0 10px;
+}
+.switch-style__toggle {
+    position: absolute;
+    top: 30px;
+    right: 239px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(250, 249, 246);
+    line-height: 40px;
+}
+.switch-style__toggle:hover {
+    cursor: pointer;
+}
+.switch-style__title {
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+}
+.switch-style__subtitle, .switch-style__description {
+    font-weight: 600;
+}
+.fonts, .colors {
+    h5 {
+        position: relative;
+    }
+    h5 span:hover {
+        cursor: pointer;
+    }
+    h5 span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.font, .color {
+    display: block;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0) inset;
+    transition: box-shadow 0.5s ease;
+}
+.font:hover {
+    box-shadow: 0 0 10px 50px rgba(0, 0, 255, 0.5) inset;
+}
+.color:hover {
+    box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.3) inset;
+}
+.switch-style__body li span:hover {
+    cursor: pointer;
+}
+
+// bg-colors
+.color-blue {
+    background-color: rgb(7, 7, 149);
+}
+.color-green {
+    background-color: rgb(0, 166, 154);
+}
+.color-green2 {
+    background-color: rgb(20, 155, 96);
+}
+.color-orange {
+    background-color: rgb(218, 73, 28);
+}
+.color-pink {
+    background-color: rgb(200, 10, 72);
+}
+.color-purple {
+    background-color: rgb(185, 51, 102);
+}
+.color-red {
+    background-color: rgb(255, 21, 33);
+}
+.color-yellow {
+    background-color: rgb(230, 138, 0);
+}
+
+// fonts
+.fonts {
+    font-weight: 600;
+}
+.font-vt323 {
+    font-family: "VT323";
+    font-size: 24px;
+}
+.font-playfair {
+    font-family: "Playfair";
+    font-size: 22px;
+}
+.font-poppins {
+    font-family: "Poppins";
+    font-size: 18px;
+}
+.font-inter {
+    font-family: "Inter";
+}
+.font-lobster {
+    font-family: "Lobster";
+    font-size: 18px;
+}
+.font-raleway {
+    font-family: "Raleway";
+    font-size: 18px;
+}
+.font-nunito {
+    font-family: "Nunito";
+    font-size: 18px;
+}
+.font-merriweather {
+    font-family: "Merriweather";
+    font-size: 18px;
+}
+.font {
+    position: relative;
+}
+.font::after {
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    top: 120%;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 0px 10px !important;
+    display: none;
+}
+.font:hover::after {
+    display: block;
+}
+.font-vt323::after {
+    content: "\"VT323\"";
+}
+.font-playfair::after {
+    content: "\"Playfair\"";
+}
+.font-poppins::after {
+    content: "\"Poppins\"";
+}
+.font-inter::after {
+    content: "\"Inter\"";
+    left: 100%;
+    transform: translateX(-92%);
+}
+.font-lobster::after {
+    content: "\"Lobster\"";
+}
+.font-raleway::after {
+    content: "\"Raleway\"";
+}
+.font-nunito::after {
+    content: "\"Nunito\"";
+}
+.font-merriweather::after {
+    content: "\"Merriweather\"";
+    left: 100%;
+    transform: translateX(-92%);
+}
+@media (max-width: 767px) and (orientation: landscape) {
+    .switch-style {
+        transform: translate(100%,-25%)
+    }
+    .switch-style.active {
+        transform: translate(0,-25%);
+    }
+}
+@media only screen and (max-width: 575.9px) {
+    .switch-style {
+        width: 220px;
+    }
+    .switch-style__toggle {
+        right: 219px;
+    }
+    .colors h5 a {
+        margin-left: 95px;
+    }
+}

@@ -1,0 +1,236 @@
+@use "./../abstract" as var;
+
+// base
+section:nth-of-type(odd), .home, body {
+    background-color: var(--bg-primary);
+}
+section:nth-of-type(even) {
+    background-color: var(--bg-secondary);
+}
+.secondary-text {
+    color: var(--secondary-text);
+}
+.primary-text, .myName + p, .accordions :not(p,a) {
+    color: var(--primary-text);
+}
+
+.changeable-bg {
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255) !important;
+}
+.changeable-text {
+    color: blue;
+}
+.portfolio-card__link:hover {
+    transform: translateX(8px);
+    color: var(--portfolio-card-link-hover) !important;
+}
+
+// settings
+.switch-style {
+    background-color: var(--primary-text) !important;
+    color: var(--bg-primary) !important;
+}
+.switch-style__title, .switch-style__subtitle {
+    color: var(--bg-primary) !important;
+}
+.switch-style__toggle {
+    background-color: var(--primary-text) !important;
+    border-right: none;
+}
+.fonts, .colors {
+    h5 span {
+        display: inline-block;
+        background-image: var(--refresh-bg-image);
+    }
+}
+.font, .color {
+    border: 1px solid var(--bg-primary);
+}
+.font, .color {
+    &.active {
+        outline: 1px solid var(--bg-primary);
+        outline-offset: 3px;
+    }
+}
+.font::after {
+    background-color: var(--bg-navbar);
+    color: var(--navbar-text);
+}
+
+// home
+.home {
+    background-image: var(--home-bg-image);
+}
+.home::before {
+    background-color: var(--bg-home-before);
+}
+
+// navigation
+.navigation {
+    background-color: var(--bg-navbar);
+}
+.navigation-shadow {
+    box-shadow: 0 0 10px 0.1px rgb(80,80,80,0.5);
+}
+.navbar-nav .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link.show, .dropdown-item {
+    color: var(--navbar-text);
+}
+.nav-link.active {
+    text-decoration: underline solid var(--navbar-text);
+}
+.nav-link:hover, .nav-link.active:hover, .navlink.dropdown-toggle:focus:hover {
+    color: var(--blue-text-hover) !important;
+    opacity: 1;
+    text-decoration-color: var(--blue-text-hover);
+}
+.dropdown-menu {
+    background-color: var(--bg-navbar);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--blue-text-hover);
+    background-color: var(--bg-dropdown-item);
+}
+.mode-toggle {
+    background-image: var(--mode-bg-image);
+}
+.mode-toggle:hover {
+    background-image: var(--mode-bg-hover);
+}
+.navbar-brand img {
+    background-color: var(--bg-navbar);
+}
+
+// about
+.download-modal, .portfolio-modal {
+    background-color: var(--bg-navbar);
+    border: 1px solid var(--primary-border);
+}
+.modal-close-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+// portfolio
+.portfolio-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--secondary-border);
+}
+
+// services
+.service-bordered-row {
+    border: 1px solid var(--secondary-border);
+}
+.service-bordered-row .col-md-6:nth-of-type(1) .service-card,
+.service-bordered-row .col-md-6:nth-of-type(4) .service-card,
+.service-bordered-row .col-md-6:nth-of-type(5) .service-card {
+    background-color: var(--bg-primary);
+}
+
+// resume
+.education-item__body, .work-item__body {
+    border: 1px solid var(--primary-border);
+    background-color: var(--bg-secondary);
+}
+.education-item__button, .work-item__button {
+    background-color: var(--bg-accordion-button);
+}
+.education-item-before::before, .work-item-before::before {
+    border-left: 1px dashed var(--primary-border);
+}
+
+// soft-skills
+.soft-skills-bordered-row {
+    border: 1px solid var(--secondary-border);
+}
+.soft-skills-bordered-row .col-11:nth-of-type(2n+1) .soft-skills-card {
+    background-color: var(--bg-primary);
+}
+
+
+// contact
+.form-control {
+    background-color: var(--bg-secondary);
+    caret-color: var(--primary-text);
+    border-bottom: 1px solid #363636;
+
+}
+.form-control::placeholder {
+    color: var(--secondary-text);
+}
+.form-control:focus {
+    border: 0;
+    background-color: var(--bg-secondary);
+    color: var(--primary-text);
+    outline: none;
+}
+.form-control:-webkit-autofill {
+    -webkit-text-fill-color: var(--primary-text-90) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--bg-secondary inset);
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--primary-text-90) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--bg-secondary inset,
+                        0 0 0 .25rem rgba(13, 110, 253, .25));
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form-control::placeholder {
+    color: var(--secondary-text);
+}
+// footer
+.footer {
+    background-color: var(--bg-footer);
+}
+.copyright {
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 768px) {
+    .service-bordered-row .col-md-6:nth-of-type(2n+1) .service-card {
+        border-right: 1px solid var(--primary-border);
+    }
+    .service-bordered-row .col-md-6:nth-of-type(-n+4) .service-card {
+        border-bottom: 1px dashed var(--primary-border);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .soft-skills-bordered-row .col-11:nth-of-type(3n+2) .soft-skills-card {
+        border-left: 1px solid var(--primary-border);
+        border-right: 1px solid var(--primary-border);
+    }
+    .soft-skills-bordered-row .col-11:nth-of-type(4) .soft-skills-card,
+    .soft-skills-bordered-row .col-11:nth-of-type(5) .soft-skills-card,
+    .soft-skills-bordered-row .col-11:nth-of-type(6) .soft-skills-card {
+        border-top: 1px dashed var(--primary-border);
+        border-bottom: 1px dashed var(--primary-border);
+    }
+}
+
+
+@media only screen and (max-width: 991.9px) {
+    .navbar-collapse {
+        border-top: 1px solid var(--primary-border);
+    }
+    .soft-skills-bordered-row .col-11:nth-of-type(1) .soft-skills-card,
+    .soft-skills-bordered-row .col-11:nth-of-type(4) .soft-skills-card,
+    .soft-skills-bordered-row .col-11:nth-of-type(5) .soft-skills-card,
+    .soft-skills-bordered-row .col-11:nth-of-type(8) .soft-skills-card {
+        border-right: 1px solid var(--primary-border);
+    }
+    .soft-skills-bordered-row .col-11:nth-of-type(-n+6) .soft-skills-card {
+        border-bottom-width: 1px;
+        border-bottom-style: dashed;
+        border-bottom-color: var(--primary-border);
+    }
+}
+@media only screen and (max-width: 767.9px) {
+    .service-card, .soft-skills-card {
+        border: 1px solid var(--primary-border) !important;
+        border-radius: 0.75rem;
+    }
+    .service-bordered-row, .soft-skills-bordered-row {
+        border: none;
+    }
+}

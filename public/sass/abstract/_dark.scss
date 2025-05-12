@@ -1,0 +1,31 @@
+[data-theme="dark"] {
+    --primary-text: rgb(255, 255, 255);
+    --secondary-text: rgb(161, 161, 161);
+    --blue-text-hover: rgb(13, 110, 253);
+    --primary-text-90: rgba(255, 255, 255, 0.9);
+    --secondary-text-80: rgba(210, 210, 210, 0.8);
+    --navbar-text: rgba(255, 255, 255, 0.9);
+    --portfolio-card-link-hover: rgb(127, 255, 212);
+
+    --bg-primary: rgb(13, 12, 13);
+    --bg-secondary: rgb(23, 23, 23);
+    --bg-navbar: rgba(13, 12, 13, 0.98);
+    --bg-dropdown-item: rgb(25, 25, 25);
+    --bg-secondary-90: rgba(23, 23, 23, 0.9);
+    --bg-card-primary: rgb(13, 12, 13);
+    --bg-card-secondary: rgb(23, 23, 23);
+    --bg-home-before: rgba(0, 0, 0, 0.6);
+    --bg-footer: rgb(13, 12, 13);
+    --bg-accordion-button: rgb(108, 117, 125);
+
+    --primary-border: rgb(108, 117, 125);
+    --secondary-border: rgb(23, 23, 23);
+
+    --mode-bg-image: url("./../../assets/media/images/generals/mode-dark.png");
+    --mode-bg-hover: url("./../../assets/media/images/generals/mode-dark-hover.png");
+    --home-bg-image: url("./../../assets/media/images/generals/bg-home-dark.jpg");
+    --refresh-bg-image: url("./../../assets/media/images/generals/reset-dark.png");
+}
+
+
+

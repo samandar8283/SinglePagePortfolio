@@ -1,0 +1,36 @@
+.technologies {
+    padding: 100px 0;
+}
+.technologies div {
+    z-index: 1;
+}
+.technologies img {
+    width: 9rem;
+}
+#card-carousel-left, #card-carousel-right {
+    pointer-events: none;          
+    user-select: none;             
+    -webkit-user-drag: none;       
+    -webkit-user-select: none;     
+    -moz-user-select: none;       
+}
+@media only screen and (max-width: 991.9px) {
+    .technologies img {
+        width: 8rem;
+    }
+}
+@media only screen and (max-width: 767.9px) {
+    .technologies img {
+        width: 7rem;
+    }
+}
+@media only screen and (max-width: 575.9px) {
+    .technologies img {
+        width: 5rem;
+    }
+}
+@media only screen and (max-width: 425.9px) {
+    .technologies img {
+        width: 4rem;
+    }
+}

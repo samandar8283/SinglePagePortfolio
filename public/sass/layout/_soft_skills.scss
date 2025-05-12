@@ -1,0 +1,28 @@
+.soft-skills-card__line {
+    width: 30px;
+    height: 4px;
+}
+.soft-skills-card {
+    padding: 40px 20px 20px 40px;
+}
+.soft-skills-card img {
+    width: 120px;
+}
+@media only screen and (max-width: 991.9px) {
+    .soft-skills-card img {
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 767.9px) {
+    .soft-skills-card {
+        padding: 50px 30px;
+    }
+}
+@media only screen and (max-width: 575.9px) {
+    .soft-skills-card {
+        padding: 30px 25px;
+    }
+    .soft-skills-card img {
+        width: 80px;
+    }
+}

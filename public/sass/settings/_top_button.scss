@@ -1,0 +1,17 @@
+.to-top {
+    top: 90%;
+    right: 3%;
+    z-index: 999;
+}
+.to-top-button {
+    display: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+}
+@media only screen and (max-width: 575.9px) {
+    .to-top {
+        right: 5%;
+    }
+}

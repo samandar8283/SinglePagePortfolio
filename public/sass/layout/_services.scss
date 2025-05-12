@@ -1,0 +1,31 @@
+.service-card {
+    padding: 50px 30px 30px 50px;
+}
+.service-card img {
+    width: 160px;
+}
+.service-card__line {
+    width: 80px;
+    height: 4px;
+}
+@media only screen and (max-width: 991.9px) {
+    .service-card img {
+        width: 130px;    
+    }
+}
+@media only screen and (max-width: 767.9px) {
+    .service-card {
+        padding: 50px 30px;
+    }
+    .service-card img {
+        width: 160px;
+    }
+}
+@media only screen and (max-width: 575.9px) {
+    .service-card {
+        padding: 30px 25px;
+    }
+    .service-card img {
+        width: max(35%, 100px);
+    }
+}
