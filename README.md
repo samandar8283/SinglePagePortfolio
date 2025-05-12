@@ -6,6 +6,7 @@ Bu loyiha mening shaxsiy portfolio saytim bo‘lib, unda dasturlash yo‘nalishi
 
 - HTML
 - CSS
+- Sass
 - Bootstrap
 - JavaScript
 
