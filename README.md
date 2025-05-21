@@ -18,8 +18,36 @@ Bu loyiha mening shaxsiy portfolio saytim bo‘lib, unda dasturlash yo‘nalishi
 
 ## 🔗 Veb-sayt
 
-👉 [Saytga kirish](https://yusupov-samandarbek.netlify.app)
+👉 [Saytga tashrif buyurish](https://yusupov-samandarbek.netlify.app)
 
 ## 👨‍💻 Muallif
+
+**Yusupov Samandarbek** | GitHub: [@samandar8283](https://github.com/samandar8283)
+
+---
+
+# 🌐 Yusupov Samandarbek — Personal Portfolio
+
+This project is my personal portfolio website, showcasing my experience in programming, my projects, and contact information. It features a minimalist design and simple navigation to provide users with a friendly interface.
+
+## 🛠 Technologies
+
+- HTML  
+- CSS  
+- Sass  
+- Bootstrap  
+- JavaScript  
+
+## 🖥 Features
+
+- 📱 **Fully responsive design** — optimized for both mobile and desktop devices.  
+- 🎨 **Font and color customization** — allows users to choose the appearance according to their preferences.  
+- 📬 **Contact form** — messages sent through the form are delivered directly to a Telegram bot.  
+
+## 🔗 Website
+
+👉 [Visit website](https://yusupov-samandarbek.netlify.app)
+
+## 👨‍💻 Author
 
 **Yusupov Samandarbek** | GitHub: [@samandar8283](https://github.com/samandar8283)
